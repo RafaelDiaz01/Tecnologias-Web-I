@@ -1,0 +1,4 @@
+com/mycompany/servlets/RespuestaXML.class
+com/mycompany/servlets/RespuestaJSON.class
+com/mycompany/servlets/RespuestaImagen.class
+com/mycompany/servlets/RespuestaHTML.class

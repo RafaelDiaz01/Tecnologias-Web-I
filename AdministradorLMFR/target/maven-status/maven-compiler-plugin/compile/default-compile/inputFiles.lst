@@ -1,0 +1,13 @@
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/controllers/TipoUsuarioController.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Usuario.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Jugador.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/services/TipoUsuarioService.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/TipoUsuario.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Partido.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Temporada.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Categoria.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/utils/DBConnection.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Arbitro.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Gol.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/dao/TipoUsuarioDAO.java
+/home/rafaeldiaz/NetBeansProjects/AdministradorLMFR/src/main/java/com/unsij/beans/Equipo.java

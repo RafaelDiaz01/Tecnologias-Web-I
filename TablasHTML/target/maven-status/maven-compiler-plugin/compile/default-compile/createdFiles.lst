@@ -1,0 +1,4 @@
+com/mycompany/servlets/CatalogoProductos.class
+com/mycompany/models/Producto.class
+com/mycompany/models/ProductoDB.class
+com/mycompany/tablas/Tablas.class

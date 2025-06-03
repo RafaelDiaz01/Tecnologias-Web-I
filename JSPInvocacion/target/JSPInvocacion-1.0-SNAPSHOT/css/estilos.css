@@ -1,0 +1,22 @@
+div {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: 
+        auto 1fr auto;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: bisque;
+}
+
+footer{
+    background-color: bisque;
+}
+
+#footer_text {
+    text-align: center;
+}

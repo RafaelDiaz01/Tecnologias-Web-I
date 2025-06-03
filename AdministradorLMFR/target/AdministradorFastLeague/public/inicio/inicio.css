@@ -1,0 +1,19 @@
+.image {
+    background-image: url('../assets/imagenFondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 7em;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+

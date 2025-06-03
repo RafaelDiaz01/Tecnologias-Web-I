@@ -1,0 +1,53 @@
+<!-- Kevin Rafael Diaz Lopez - 13/05/2025 -->
+
+<!DOCTYPE html>
+<!-- Comentario sobre licencia y plantilla (generado automáticamente) -->
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <!-- Título de la página -->
+        <title>Inscripciones</title>
+        <!-- Configuración de metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Ejercicio de Comentarios</h1>
+        <!-- Formulario con método POST y acción "comentarios" -->
+        <form name="contactanos" action="comentarios" method="post">
+            <!-- Agrupación de campos del formulario -->
+            <fieldset>
+                <legend> Contáctanos </legend>
+                
+                <!-- Campo de entrada para el nombre -->
+                <label for="nombre"> Nombre: </label> <br>
+                <input type="text" name="nombre" id="nombre" autofocus required> <br>
+
+                <!-- Campo de entrada para el email -->
+                <label for="email"> Email: </label> <br>
+                <input type="text" name="email" id="email" required> <br>
+
+                <!-- Selector para el grado de estudios -->
+                <label for="email"> Último grado de estudios: </label> <br>
+                <select name="grado" id="grado"> 
+                    <option value="secundaria"> Secundaria </option>
+                    <option value="preparatoria"> Preparatoria </option>
+                    <option value="licenciatura"> Licenciatura </option>
+                    <option value="maestria"> Maestria </option>
+                    <option value="doctorado"> Doctorado </option>
+                </select> <br>
+
+                <!-- Área de texto para comentarios -->
+                <label for="comentarios"> Comentarios: </label> <br>
+                <textarea required name="comentarios" id="comentarios" cols="39" rows="5"> </textarea> <br>
+                
+                <!-- Botones de envío y reset -->
+                <input type="submit" name="register" id="button" value="Registrar">
+                <input type="reset" name="reset">
+            </fieldset>
+        </form>
+    </body>
+</html>

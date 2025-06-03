@@ -1,0 +1,13 @@
+com/unsij/beans/TipoUsuario.class
+com/unsij/beans/Partido.class
+com/unsij/beans/Temporada.class
+com/unsij/beans/Usuario.class
+com/unsij/services/TipoUsuarioService.class
+com/unsij/beans/Gol.class
+com/unsij/beans/Arbitro.class
+com/unsij/beans/Categoria.class
+com/unsij/controllers/TipoUsuarioController.class
+com/unsij/utils/DBConnection.class
+com/unsij/dao/TipoUsuarioDAO.class
+com/unsij/beans/Jugador.class
+com/unsij/beans/Equipo.class
