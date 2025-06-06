@@ -17,6 +17,7 @@
               integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
         <link href="inicio.css" rel="stylesheet">
         <link href="../componentes/navbar.css" rel="stylesheet" />
+        <link href="../componentes/footer.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -25,11 +26,11 @@
 
         <main>
             <div class="image">
-                <div>
-                    <h1>Fast League</h1>
-                </div>
+                <h1>Fast League</h1>
             </div>
         </main>
+
+        <jsp:include page="../componentes/footer.jsp"/> <!-- Footer incluido aquí -->
 
     </body>
 </html>

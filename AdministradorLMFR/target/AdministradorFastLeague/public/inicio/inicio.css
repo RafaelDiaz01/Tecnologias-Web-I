@@ -2,7 +2,7 @@
     background-image: url('../assets/imagenFondo.jpg');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 77vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,5 +15,4 @@ h1 {
     margin: 0;
     font-family: 'DM Sans', sans-serif;
 }
-
 

@@ -50,7 +50,7 @@ header {
 }
 
 .menu-buttons button:hover {
-    background-color: green;
+    background-color: rgb(58, 90, 64);
     color: white;
     border-radius: 20px;
 }
@@ -86,8 +86,12 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: green;
+    background-color: rgb(106, 153, 78);
     color: white;
+}
+
+.dropdown-content #cerrar_sesion:hover{
+    background-color: rgb(188, 71, 73);
 }
 
 /* Mostrar el dropdown al hacer hover */
@@ -97,7 +101,7 @@ header {
 
 /* Estilo para el botón del dropdown cuando está activo */
 .dropdown:hover .dropdown-btn {
-    background-color: green;
+    background-color: rgb(58, 90, 64);
     color: white;
     border-radius: 20px;
 }
