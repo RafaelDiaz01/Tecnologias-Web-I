@@ -34,7 +34,8 @@ header {
 
 .menu-buttons {
     display: flex;
-    gap: 30px; /* Mejor que márgenes individuales */
+    gap: 30px;
+    margin-right: 50px;
 }
 
 .menu-buttons button {
@@ -42,13 +43,55 @@ header {
     background-color: white;
     color: black;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 50px;
     cursor: pointer;
     font-size: 16px;
-    transition: all 0.3s ease; /* Suaviza efectos hover */
+    transition: all 0.3s ease;
 }
 
 .menu-buttons button:hover {
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Estilos para el dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Mostrar el dropdown al hacer hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo para el botón del dropdown cuando está activo */
+.dropdown:hover .dropdown-btn {
     background-color: green;
     color: white;
     border-radius: 20px;

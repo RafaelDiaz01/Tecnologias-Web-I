@@ -24,8 +24,18 @@
             <nav class="menu-buttons">
                 <button onclick="location.href = 'inicio.jsp'">Inicio</button>
                 <button onclick="location.href = './usuarios'">Partidos</button>
-                <button onclick="location.href = '/public/GestionContribuyentes/gestion_contribuyentes.html'">Jugadores</button>
-                <button onclick="location.href = '/public/Catalogos/menu-catalogos.html'">Otros</button>
+                <button onclick="location.href = './usuarios'">Jugadores</button>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Otros</button>
+                    <div class="dropdown-content">
+                        <a href="#">Equipos</a>
+                        <a href="#">Tabla de Goleo</a>
+                        <a href="#">Temporadas</a>
+                        <a href="#">Categorias</a>
+                        <a href="#">Arbitros</a>
+                        <a href="#">Ajustes</a>
+                    </div>
+                </div>
             </nav>  
         </header>
     </body>
