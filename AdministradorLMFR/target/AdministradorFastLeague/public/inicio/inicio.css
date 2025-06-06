@@ -3,6 +3,7 @@ body{
     min-height: 100dvh;
     grid-template-rows:
         auto 1fr auto;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .image {
@@ -20,6 +21,5 @@ h1 {
     color: white;
     font-size: 7em;
     margin: 0;
-    font-family: 'DM Sans', sans-serif;
 }
 

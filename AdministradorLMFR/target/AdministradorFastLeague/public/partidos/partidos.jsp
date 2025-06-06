@@ -20,66 +20,62 @@
         <link rel="stylesheet" href="partidos.css"/>
     </head>
     <body>
-        <jsp:include page="../componentes/navbar.jsp"/> <!-- JSP que contiene navbar -->
+        <jsp:include page="../componentes/navbar.jsp"/>
 
-        <h1>Programación del día</h1>
-        <!--<div class="tabla-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Encabezado 1</th>
-                        <th>Encabezado 2</th>
-                        <th>Encabezado 3</th>
-                        <th>Encabezado 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fila 1, Dato 1</td>
-                        <td>Fila 1, Dato 2</td>
-                        <td>Fila 1, Dato 3</td>
-                        <td>Fila 1, Dato 4</td>
-                    </tr>
-                    <tr>
-                        <td>Fila 2, Dato 1</td>
-                        <td>Fila 2, Dato 2</td>
-                        <td>Fila 2, Dato 3</td>
-                        <td>Fila 2, Dato 4</td>
-                    </tr>
-                    <tr>
-                        <td>Fila 3, Dato 1</td>
-                        <td>Fila 3, Dato 2</td>
-                        <td>Fila 3, Dato 3</td>
-                        <td>Fila 3, Dato 4</td>
-                    </tr>
-                    <tr>
-                        <td>Fila 4, Dato 1</td>
-                        <td>Fila 4, Dato 2</td>
-                        <td>Fila 4, Dato 3</td>
-                        <td>Fila 4, Dato 4</td>
-                    </tr>
-                    <tr>
-                        <td>Fila 5, Dato 1</td>
-                        <td>Fila 5, Dato 2</td>
-                        <td>Fila 5, Dato 3</td>
-                        <td>Fila 5, Dato 4</td>
-                    </tr>
-                    <tr>
-                        <td>Fila 6, Dato 1</td>
-                        <td>Fila 6, Dato 2</td>
-                        <td>Fila 6, Dato 3</td>
-                        <td>Fila 6, Dato 4</td>
-                    </tr>
-                    <tr>
-                        <td>Fila 7, Dato 1</td>
-                        <td>Fila 7, Dato 2</td>
-                        <td>Fila 7, Dato 3</td>
-                        <td>Fila 7, Dato 4</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div> -->
+        <main>
+            <h1>Programación del día</h1>
+            <div class="tabla-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Equipo Local</th>
+                            <th></th>
+                            <th>Equipo Visitante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>19:00</td>
+                            <td>La Trinidad</td>
+                            <td>vs</td>
+                            <td>Warriors</td>
+                        </tr>
+                        <tr>
+                            <td>19:40</td>
+                            <td>La Soledad</td>
+                            <td>vs</td>
+                            <td>Heroes</td>
+                        </tr>
+                        <tr>
+                            <td>20:15</td>
+                            <td>La Trinidad</td>
+                            <td>vs</td>
+                            <td>Real Yahuío</td>
+                        </tr>
+                        <tr>
+                            <td>20:50</td>
+                            <td>Beykers</td>
+                            <td>vs</td>
+                            <td>Cefor</td>
+                        </tr>
+                        <tr>
+                            <td>21:25</td>
+                            <td>Real Yahuío</td>
+                            <td>vs</td>
+                            <td>Napoli</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Mototaxis</td>
+                            <td>vs</td>
+                            <td>Leñadores</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
 
-        <jsp:include page="../componentes/footer.jsp"/> <!-- Footer -->
+        <jsp:include page="../componentes/footer.jsp"/>
     </body>
 </html>
