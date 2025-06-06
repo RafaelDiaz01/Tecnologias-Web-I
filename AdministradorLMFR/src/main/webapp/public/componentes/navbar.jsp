@@ -15,7 +15,7 @@
         </div>
     </div>
     <nav class="menu-buttons">
-        <button onclick="location.href = 'inicio.jsp'">Inicio</button>
+        <button onclick="location.href = '../inicio/inicio.jsp'">Inicio</button>
         <button onclick="location.href = '../partidos/partidos.jsp'">Partidos</button>
         <button onclick="location.href = './usuarios'">Jugadores</button>
         <div class="dropdown">

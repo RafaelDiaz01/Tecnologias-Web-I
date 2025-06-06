@@ -1,3 +1,10 @@
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows:
+        auto 1fr auto;
+}
+
 .image {
     background-image: url('../assets/imagenFondo.jpg');
     background-size: cover;

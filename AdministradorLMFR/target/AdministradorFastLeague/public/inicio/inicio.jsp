@@ -30,7 +30,7 @@
             </div>
         </main>
 
-        <jsp:include page="../componentes/footer.jsp"/> <!-- Footer incluido aquí -->
+        <jsp:include page="../componentes/footer.jsp"/> <!-- Footer -->
 
     </body>
 </html>
