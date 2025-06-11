@@ -1,0 +1,109 @@
+/* Estilos para la vista de los partidos al ingresar como usuario*/
+
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows:
+        auto 1fr auto;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 180px;
+}
+
+.div1 {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    background-color: rgb(242, 232, 207);
+    border-radius: 20px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    background-color: rgb(106, 153, 78);
+    border-radius: 20px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    background-color: rgb(106, 153, 78);
+    border-radius: 20px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+/* Estilos para la tabla de partidos */
+
+.tabla-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px; /* Más ancho que antes */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(56, 102, 65);
+    color: white;
+}
+
+tr{
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9e9e9;
+}
+
+td:nth-child(3) { /* Estilo especial para la columna "vs" */
+    font-weight: bold;
+    color: black;
+}
+
+/* Estilos para los titulo */
+.encabezado{
+    padding-top: 30px;
+    padding-bottom: 90px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.actual{
+    padding-top: 30px;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold
+}
+
+.marcador{
+    padding-top: 30px;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold
+}
