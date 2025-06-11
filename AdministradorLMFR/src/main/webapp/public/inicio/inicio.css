@@ -10,7 +10,7 @@ body{
     background-image: url('../assets/imagenFondo.jpg');
     background-size: cover;
     background-position: center;
-    height: 77vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,3 +23,53 @@ h1 {
     margin: 0;
 }
 
+.proximos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.proxPartidos{
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgb(106, 153, 78);
+}
+
+.partido{
+    width: min-content;
+    margin-left: 20px;
+    color: white;
+    background-color: red;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.botonesPartidos{
+    display: flex;
+    gap: 30px;
+}
+
+.botonesPartidos button{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botonesPartidos button:hover{
+    background-color: rgb(58, 90, 64);
+    color: white;
+}
