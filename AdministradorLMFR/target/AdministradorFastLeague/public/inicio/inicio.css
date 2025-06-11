@@ -26,34 +26,44 @@ h1 {
 .proximos{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
     margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
 }
 
-.proxPartidos{
+.proxPartidos {
     display: flex;
-    justify-content: space-around;
-    padding: 70px;
-    margin-top: 50px;
+    justify-content: space-between;
+    margin-top: 30px;
     margin-left: 200px;
     margin-right: 200px;
-    background-color: rgb(106, 153, 78);
+    gap: 20px; /* Agrega espacio entre las tablas */
 }
 
-.partido{
-    width: min-content;
-    margin-left: 20px;
+.partido {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    table-layout: fixed;
+}
+
+.partido td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    word-wrap: break-word;
+}
+
+#fecha {
+    background-color: rgb(56, 102, 65);
     color: white;
-    background-color: red;
 }
 
 h2 {
     font-weight: bold;
 }
+
+/* Estilos de los botones de Próximos Partidos*/
 
 .botonesPartidos{
     display: flex;

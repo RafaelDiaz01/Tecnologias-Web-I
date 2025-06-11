@@ -28,7 +28,7 @@
             <div class="image">
                 <h1>Fast League</h1>
             </div>
-            
+
             <br>
             <hr>
 
@@ -42,15 +42,41 @@
             </div>
 
             <div class="proxPartidos">
-                <div class="partido">
-                    <h3>7:00</h3>
-                </div>
-                <div class="partido">
-                    <h3>8:00</h3>
-                </div>
-                <div class="partido">
-                    <h3>9:00</h3>
-                </div>
+                <table class="partido">
+                    <tr id="fecha">
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td>Partido 1</td>
+                    </tr>
+                    <tr>
+                        <td>Cancha Municipal de Fútbol Rápido</td>
+                    </tr>
+                </table>
+
+                <table class="partido">
+                    <tr id="fecha">
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td>Partido 1</td>
+                    </tr>
+                    <tr>
+                        <td>Cancha Municipal de Fútbol Rápido</td>
+                    </tr>
+                </table>
+
+                <table class="partido">
+                    <tr id="fecha">
+                        <td>Fecha</td>
+                    </tr>
+                    <tr>
+                        <td>Partido 1</td>
+                    </tr>
+                    <tr>
+                        <td>Cancha Municipal de Fútbol Rápido</td>
+                    </tr>
+                </table>
             </div>
         </main>
 
