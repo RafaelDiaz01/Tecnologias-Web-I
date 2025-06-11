@@ -28,6 +28,30 @@
             <div class="image">
                 <h1>Fast League</h1>
             </div>
+            
+            <br>
+            <hr>
+
+            <div class="proximos">
+                <h2>Proximos Partidos</h2> 
+                <div class="botonesPartidos">
+                    <button>Varonil Libre</button>
+                    <button>Femenil Libre</button>
+                    <button>Veteranos</button>
+                </div>
+            </div>
+
+            <div class="proxPartidos">
+                <div class="partido">
+                    <h3>7:00</h3>
+                </div>
+                <div class="partido">
+                    <h3>8:00</h3>
+                </div>
+                <div class="partido">
+                    <h3>9:00</h3>
+                </div>
+            </div>
         </main>
 
         <jsp:include page="../componentes/footer.jsp"/> <!-- Footer -->
