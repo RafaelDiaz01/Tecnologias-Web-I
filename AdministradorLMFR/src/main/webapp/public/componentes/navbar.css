@@ -92,6 +92,7 @@ header {
 
 .dropdown-content #cerrar_sesion:hover{
     background-color: rgb(188, 71, 73);
+    color: white;
 }
 
 /* Mostrar el dropdown al hacer hover */

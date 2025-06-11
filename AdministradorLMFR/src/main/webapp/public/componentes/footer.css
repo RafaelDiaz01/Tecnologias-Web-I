@@ -7,8 +7,9 @@ footer {
     margin-top: 2rem;
 }
 
-footer p{
+footer a{
     font-family: 'DM Sans', sans-serif;
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }

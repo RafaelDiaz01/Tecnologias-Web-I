@@ -5,5 +5,5 @@
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <footer> 
-    <p>© Universidad de la Sierra Juárez</p>
+    <a href="https://www.unsij.edu.mx/web/"> © Universidad de la Sierra Juárez </a>
 </footer>
