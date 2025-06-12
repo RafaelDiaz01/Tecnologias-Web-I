@@ -23,7 +23,7 @@ h1 {
     margin: 0;
 }
 
-.proximos{
+.seccion{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -83,3 +83,54 @@ h2 {
     background-color: rgb(58, 90, 64);
     color: white;
 }
+
+/* Estilos para los lideres*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 8px;
+    background-color: rgb(58, 90, 64);
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-row-start: 5;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    grid-row-start: 5;
+}
+

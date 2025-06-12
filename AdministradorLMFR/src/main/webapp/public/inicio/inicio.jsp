@@ -32,7 +32,8 @@
             <br>
             <hr>
 
-            <div class="proximos">
+            <!-- Seccion para ver los próximos partidos -->
+            <div class="seccion">
                 <h2>Proximos Partidos</h2> 
                 <div class="botonesPartidos">
                     <button>Varonil Libre</button>
@@ -78,6 +79,28 @@
                     </tr>
                 </table>
             </div>
+
+            <!-- Apartado para mostrar los lideres el torneo -->
+
+            <div class="seccion">
+                <h2>Líderes del Torneo</h2> 
+                <div class="botonesPartidos">
+                    <button>Varonil Libre</button>
+                    <button>Femenil Libre</button>
+                    <button>Veteranos</button>
+                </div>
+            </div>
+
+
+            <div class="parent">
+                <div class="div1">Goles</div>
+                <div class="div2">Disparos</div>
+                <div class="div3">Pases</div>
+                <div class="div4">Regates</div>
+                <div class="div5">Atajadas</div>
+                <div class="div6">Asistencias</div>
+            </div>
+
         </main>
 
         <jsp:include page="../componentes/footer.jsp"/> <!-- Footer -->
