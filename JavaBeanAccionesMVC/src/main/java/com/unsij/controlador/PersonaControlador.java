@@ -27,11 +27,6 @@ public class PersonaControlador extends HttpServlet {
         String nombre = request.getParameter("nombre");
         String edadStr = request.getParameter("edad");
 
-        if (nombre == null || nombre.trim().isEmpty() || edadStr == null || edadStr.trim().isEmpty()) {
-            response.sendRedirect("formulario.jsp?error=1");
-            return;
-        }
-
         try {
             int edad = Integer.parseInt(edadStr);
             Persona persona = new Persona();
@@ -43,5 +38,4 @@ public class PersonaControlador extends HttpServlet {
             response.sendRedirect("formulario.jsp?error=1");
         }
     }
-}
 }

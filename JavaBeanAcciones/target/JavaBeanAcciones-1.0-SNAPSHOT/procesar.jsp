@@ -14,13 +14,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Datos del Usuario</title>
+        <title>JavaBeans Acciones</title>
+        <link rel="stylesheet" href="estilos.css"/>
     </head>
     <body>
-        <h1>Acciones JSP</h1>
-        <h3>Datos del Usuario</h3>
-        Nombre: <jsp:getProperty name="miBean" property="nombre" /> <br>
-        Correo: <jsp:getProperty  name="miBean" property="correo" />
+        <header>
+            <h1>Tercer Parcial - Tecnologias Web I</h1>
+        </header>
 
+        <main>
+            <h2>Datos del Usuario</h2>
+            <form action="procesar.jsp" method="post">
+                Nombre: <jsp:getProperty name="miBean" property="nombre" /> <br>
+                Correo: <jsp:getProperty  name="miBean" property="correo" />
+                <hr>
+            </form>
+        </main>
+
+        <footer>
+            <p><a href="https://www.unsij.edu.mx/web/">Universidad de la Sierra Juárez</a></p>
+        </footer>
     </body>
 </html>
