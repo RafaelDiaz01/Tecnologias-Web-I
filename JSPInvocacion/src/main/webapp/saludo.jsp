@@ -9,25 +9,26 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Saludo</title>
-        <link rel="stylesheet" href="css/estilos.css">
+        <title>Acciones JSP</title>
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <div>
-            <header>
-                <%
-                    String nombre = request.getParameter("nombre");
-                %>
-                <h1>Hola, <%=nombre%></h1>
-            </header>
 
-            <main>
-                <p><a href="index.jsp">Volver al Inicio</a></p>
-            </main>
+        <header>
+            <h1>Tercer Parcial - Tecnologias Web I</h1>
+        </header>
 
-            <footer>
-                <jsp:include page="footer.jsp"/>
-            </footer>
-        </div>
+        <main>
+            <%
+                String nombre = request.getParameter("nombre");
+            %>
+            <h2>Hola, <%=nombre%></h2>
+            <p><a href="index.jsp">Volver al Inicio</a></p>
+        </main>
+
+        <footer>
+            <p><a href="https://www.unsij.edu.mx/web/">Universidad de la Sierra Juárez</a></p>
+        </footer>
+
     </body>
 </html>

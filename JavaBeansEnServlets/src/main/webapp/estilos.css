@@ -1,0 +1,87 @@
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows:
+        auto 1fr auto;
+    font-family: "Crimson Pro", serif;
+}
+
+header{
+    background-color: rgb(217, 4, 41);
+    color: white;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    
+}
+
+footer{
+    background-color: rgb(217, 4, 41);
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(43, 45, 66);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+button:hover{
+    background-color: rgb(141, 153, 174);
+}
+
+.form {
+    margin: 15px;
+}
+
+#boton {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(43, 45, 66);
+    color: white;
+    margin: 10px;
+}
+
+#boton:hover {
+    background-color: rgb(141, 153, 174);
+    color: black;
+}
+
+/* Estilos para la tabla de vehículo */
+.tabla-vehiculo {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.tabla-vehiculo th {
+    background-color: red;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.tabla-vehiculo td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.tabla-vehiculo tr:nth-child(even) {
+    background-color: #ffeeee;
+}
+ 

@@ -10,8 +10,8 @@
 
 <%!
     int contadorVisitas = 0;
-    
-    public String saludoPersonalizado(String nombre){
+
+    public String saludoPersonalizado(String nombre) {
         return "Hola, " + nombre;
     }
 %>
@@ -25,11 +25,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Pagina de Bienvenida</title>
+        <title>Ciclo de Vida</title>
+        <link rel="stylesheet" href="estilos.css"/>
     </head>
     <body>
-        <h1> <%= saludoPersonalizado(nombreUsuario)%> </h1>
-        <p>Hoy es: <%=fecha.toString()%></p>
-        <p>Has visitado esta pagina <%=contadorVisitas%> veces desde que se inicio el JSP.</p>
+        <header>
+            <h1>Tercer Parcial - Tecnologias Web I</h1>
+        </header>
+
+        <main>
+            <h2><%= saludoPersonalizado(nombreUsuario)%></h2>
+            <p>Hoy es: <%=fecha.toString()%></p>
+            <p>Has visitado esta pagina <%=contadorVisitas%> veces desde que se inicio el JSP.</p>
+        </main>
+
+        <footer>
+            <p><a href="https://www.unsij.edu.mx/web/">Universidad de la Sierra Juárez</a></p>
+        </footer>
     </body>
 </html>

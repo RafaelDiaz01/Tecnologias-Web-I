@@ -9,24 +9,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Inicio</title>
-        <link rel="stylesheet" href="css/estilos.css">
+        <title>Acciones JSP</title>
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <div>
-            <header>
-                <h1>Bienvenido!</h1>
-            </header>
 
-            <main>
-                <form action="saludo.jsp" method="get">
+        <header>
+            <h1>Tercer Parcial - Tecnologias Web I</h1>
+        </header>
+
+        <main>
+            <form action="saludo.jsp" method="get">
+                <div class="centrar">
                     <label for="nombre">Escribe tu nombre:</label>
                     <input type="text" name="nombre" id="nombre" required />
-                    <input type="submit" value="Saludar" />
-                </form>
-            </main>
+                    <input type="submit" value="Saludar" id="boton"/>
+                </div>
+            </form>
+        </main>
 
-            <jsp:include page="footer.jsp"/>
-        </div>
+        <footer>
+            <p><a href="https://www.unsij.edu.mx/web/">Universidad de la Sierra Juárez</a></p>
+        </footer>
+
     </body>
 </html>
