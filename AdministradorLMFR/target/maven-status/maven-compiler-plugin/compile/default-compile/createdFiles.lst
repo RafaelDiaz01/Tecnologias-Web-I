@@ -1,9 +1,12 @@
+com/unsij/dao/JugadorDAO.class
+com/unsij/controllers/JugadorController.class
 com/unsij/beans/TipoUsuario.class
 com/unsij/beans/Partido.class
 com/unsij/beans/Temporada.class
 com/unsij/beans/Usuario.class
 com/unsij/services/TipoUsuarioService.class
 com/unsij/beans/Gol.class
+com/unsij/services/JugadorService.class
 com/unsij/beans/Arbitro.class
 com/unsij/beans/Categoria.class
 com/unsij/controllers/TipoUsuarioController.class

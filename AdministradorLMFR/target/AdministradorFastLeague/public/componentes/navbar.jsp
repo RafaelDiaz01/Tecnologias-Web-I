@@ -21,8 +21,8 @@
         <div class="dropdown">
             <button class="dropdown-btn">Otros</button>
             <div class="dropdown-content">
-                <a href="#">Equipos</a>
-                <a href="#">Tabla de Goleo</a>
+                <a href="../partidos/plantilla.jsp">Equipos</a>
+                <a href="../jugadores/jugadores.jsp">Tabla de Goleo</a>
                 <a href="#">Temporadas</a>
                 <a href="#">Categorias</a>
                 <a href="#">Arbitros</a>

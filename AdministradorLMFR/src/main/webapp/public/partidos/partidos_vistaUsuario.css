@@ -12,7 +12,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 180px;
+    gap: 20px;
 }
 
 .div1 {
@@ -48,12 +48,11 @@ body{
 /* Estilos para la tabla de partidos */
 
 .tabla-container {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    margin-left: 50px;
     padding: 20px;
     width: 90%;
     max-width: 1200px; /* Más ancho que antes */
+    background-color: red;
 }
 
 table {
@@ -89,7 +88,6 @@ td:nth-child(3) { /* Estilo especial para la columna "vs" */
 /* Estilos para los titulo */
 .encabezado{
     padding-top: 30px;
-    padding-bottom: 90px;
     font-weight: bold;
     font-size: 60px;
 }
@@ -106,4 +104,13 @@ td:nth-child(3) { /* Estilo especial para la columna "vs" */
     padding-left: 30px;
     color: white;
     font-weight: bold
+}
+
+/* Estilos para el buscador */
+.buscador{
+    background-color: rgb(56, 102, 65);
+    margin: 0 200px 30px 200px;
+    padding: 15px 15px 15px 50px;
+    border-radius: 20px;
+    color: white;
 }

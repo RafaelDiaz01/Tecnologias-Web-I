@@ -48,6 +48,7 @@ header {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
+    border-radius: 20px;
 }
 
 .menu-buttons button:hover {

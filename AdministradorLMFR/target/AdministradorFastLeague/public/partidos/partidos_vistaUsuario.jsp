@@ -23,6 +23,11 @@
         <jsp:include page="../componentes/navbar.jsp"/>
 
         <main>
+
+            <div class="buscador">
+                <p>Buscar</p>
+            </div>
+
             <div class="parent">
                 <div class="div1">
                     <h1 class="encabezado">Programación del Día</h1>

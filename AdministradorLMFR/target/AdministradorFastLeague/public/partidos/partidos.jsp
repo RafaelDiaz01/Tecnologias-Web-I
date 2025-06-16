@@ -23,7 +23,7 @@
         <jsp:include page="../componentes/navbar.jsp"/>
 
         <main>
-            <h1>Programación del día</h1>
+            <h1>Programación del Día</h1>
             <div class="tabla-container">
                 <table>
                     <thead>
