@@ -26,13 +26,15 @@ public class JugadorController extends HttpServlet {
 
     private final JugadorService service = new JugadorService();
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        
+
         request.setAttribute("jugadores", service.obtenerJugadores());
         request.getRequestDispatcher("/public/jugadores/jugadores.jsp").forward(request, response);
 
     }
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = request.getParameter("id") == null || request.getParameter("id").isEmpty() ? 0 : Integer.parseInt(request.getParameter("id"));
         String nombre = request.getParameter("nombre");

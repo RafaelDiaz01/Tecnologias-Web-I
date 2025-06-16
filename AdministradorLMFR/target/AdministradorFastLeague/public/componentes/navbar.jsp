@@ -8,7 +8,7 @@
 <header>
     <div class="header-left">
         <div class="logo-left">
-            <a href="../inicio/inicio.jsp"> <img src="../assets/logoIxtlan.png" alt="Logo Ixtlán"> </a>
+            <a href="public/inicio/inicio.jsp"> <img src="${pageContext.request.contextPath}/public/assets/logoIxtlan.png" alt="Logo Ixtlán"> </a>
         </div>
         <div class="title">
             <h1>Sistema de Gestión Fast League</h1>
@@ -25,7 +25,7 @@
                 <a href="../jugadores/jugadores.jsp">Tabla de Goleo</a>
                 <a href="#">Temporadas</a>
                 <a href="#">Categorias</a>
-                <a href="#">Arbitros</a>
+                <a href="http://localhost:8080/AdministradorLMFR/arbitros">Arbitros</a>
                 <a href="#">Ajustes</a>
                 <a id="cerrar_sesion">Cerrar Sesión</a>
             </div>
