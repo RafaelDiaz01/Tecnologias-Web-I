@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -93,12 +94,30 @@
 
 
             <div class="parent">
-                <div class="div1">Goles</div>
-                <div class="div2">Disparos</div>
-                <div class="div3">Pases</div>
-                <div class="div4">Regates</div>
-                <div class="div5">Atajadas</div>
-                <div class="div6">Asistencias</div>
+                <div class="div1 card">
+                    <div class="stat-value">24</div>
+                    <div class="stat-name">Goles</div>                   
+                </div>
+                <div class="div2 card">
+                    <div class="stat-value">78</div>
+                    <div class="stat-name">Disparos</div>
+                </div>
+                <div class="div3 card">
+                    <div class="stat-value">542</div>
+                    <div class="stat-name">Pases</div>
+                </div>
+                <div class="div4 card">
+                    <div class="stat-value">63</div>
+                    <div class="stat-name">Regates</div>
+                </div>
+                <div class="div5 card">
+                    <div class="stat-value">28</div>
+                    <div class="stat-name">Atajadas</div>
+                </div>
+                <div class="div6 card">
+                    <div class="stat-value">12</div>
+                    <div class="stat-name">Asistencias</div>
+                </div>
             </div>
 
         </main>

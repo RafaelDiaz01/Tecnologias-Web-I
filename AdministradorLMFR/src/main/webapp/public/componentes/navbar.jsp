@@ -22,10 +22,10 @@
             <button class="dropdown-btn">Otros</button>
             <div class="dropdown-content">
                 <a href="../partidos/plantilla.jsp">Equipos</a>
-                <a href="http://localhost:8080/AdministradorLMFR/jugadores">Tabla de Goleo</a>
+                <a href="http://localhost:8181/AdministradorLMFR/jugadores">Tabla de Goleo</a>
                 <a href="#">Temporadas</a>
                 <a href="#">Categorias</a>
-                <a href="http://localhost:8080/AdministradorLMFR/arbitros">Arbitros</a>
+                <a href="http://localhost:8181/AdministradorLMFR/arbitros">Arbitros</a>
                 <a href="#">Ajustes</a>
                 <a id="cerrar_sesion">Cerrar Sesión</a>
             </div>

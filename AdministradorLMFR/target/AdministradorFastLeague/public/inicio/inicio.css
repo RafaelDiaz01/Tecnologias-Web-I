@@ -90,39 +90,91 @@ h2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    gap: 8px;
+    gap: 30px;
     margin-top: 30px;
     margin-left: 200px;
     margin-right: 200px;
-    color: white;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 60%
+        );
+    transform: rotate(30deg);
+}
+
+.stat-value {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.stat-name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .div1 {
     grid-column: span 2 / span 2;
     grid-row: span 4 / span 4;
-    background-color: green;
-    text-align: center;
+    background: linear-gradient(135deg, #f9d423 0%, #e14fad 100%);
+    color: #1a1a1a;
 }
 
 .div2 {
     grid-column: span 2 / span 2;
     grid-row: span 4 / span 4;
     grid-column-start: 3;
-    background-color: red;
+    background: linear-gradient(135deg, #c9d6ff 0%, #e2e2e2 100%);
+    color: #1a1a1a;
 }
 
 .div3 {
     grid-column: span 2 / span 2;
     grid-row: span 4 / span 4;
     grid-column-start: 5;
-    background-color: blue;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #1a1a1a;
 }
 
 .div4 {
     grid-column: span 2 / span 2;
     grid-row: span 4 / span 4;
     grid-row-start: 5;
-    background-color: black;
+    background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+    color: #1a1a1a;
 }
 
 .div5 {
@@ -130,7 +182,8 @@ h2 {
     grid-row: span 4 / span 4;
     grid-column-start: 3;
     grid-row-start: 5;
-    background-color: pink;
+    background: linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%);
+    color: #1a1a1a;
 }
 
 .div6 {
@@ -138,6 +191,7 @@ h2 {
     grid-row: span 4 / span 4;
     grid-column-start: 5;
     grid-row-start: 5;
-    background-color: green;
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    color: #1a1a1a;
 }
 

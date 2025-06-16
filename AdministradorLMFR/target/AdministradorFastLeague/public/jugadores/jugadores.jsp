@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
@@ -37,13 +36,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <c:forEach var="u" items="${jugadores}">
-                            <tr>
-                                <td>${u.nombreJugador}</td> 
-                                <td>${u.numeroDorsal}</td>
-                                <td>Warriors</td>
-                            </tr>
-                        </c:forEach>
+                        <tr>
+                            <td>${u.nombreJugador}</td> 
+                            <td>${u.numeroDorsal}</td>
+                            <td>Warriors</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
