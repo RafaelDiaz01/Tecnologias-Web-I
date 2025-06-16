@@ -17,12 +17,12 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-        <link href="../componentes/navbar.css" rel="stylesheet" />
-        <link href="../componentes/footer.css" rel="stylesheet" />
-        <link rel="stylesheet" href="jugadores.css"/>
+        <link href="${pageContext.request.contextPath}/public/componentes/navbar.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/public/componentes/footer.css" rel="stylesheet" />
+        <link href="${pageContext.request.contextPath}/public/jugadores/jugadores.css" rel="stylesheet" />
     </head>
     <body>
-        <jsp:include page="../componentes/navbar.jsp"/>
+        <jsp:include page="/public/componentes/navbar.jsp"/>
         <main>
             <div class="buscador">
                 <h1>Jugadores de la Liga</h1>
@@ -38,17 +38,17 @@
                     </thead>
                     <tbody>
                         <c:forEach var="u" items="${jugadores}">
-                        <tr>
-                            <td>${u.nombreJugador}</td> 
-                            <td>9</td>
-                            <td>Warriors</td>
-                        </tr>
+                            <tr>
+                                <td>${u.nombreJugador}</td> 
+                                <td>${u.numeroDorsal}</td>
+                                <td>Warriors</td>
+                            </tr>
                         </c:forEach>
                     </tbody>
                 </table>
             </div>
         </main>
 
-        <jsp:include page="../componentes/footer.jsp"/>
+        <jsp:include page="/public/componentes/footer.jsp"/>
     </body>
 </html>

@@ -22,7 +22,7 @@
 
     <body>
 
-        <jsp:include page="../componentes/navbar.jsp"/> <!-- Header que contiene el logo, y el navbar -->
+        <jsp:include page="/public/componentes/navbar.jsp"/> <!-- Header que contiene el logo, y el navbar -->
 
         <main>
             <div class="image">

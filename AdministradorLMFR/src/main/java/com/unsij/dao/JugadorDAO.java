@@ -18,11 +18,13 @@ public class JugadorDAO {
     public List<Jugador> listar() {
         List<Jugador> lista = new ArrayList<>();
         try (Connection conn = DBConnection.getConnection()) {
-            PreparedStatement ps = conn.prepareStatement("SELECT nombre_jugador FROM jugadores");
+            PreparedStatement ps = conn.prepareStatement("SELECT * FROM jugadores");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Jugador jugador = new Jugador();
                 jugador.setNombreJugador(rs.getString("nombre_jugador"));
+                jugador.setNumeroDorsal(rs.getInt("numero_dorsal"));
+                jugador.setIdEquipo(rs.getLong("id_equipo"));
                 lista.add(jugador);
             }
         } catch (Exception e) {

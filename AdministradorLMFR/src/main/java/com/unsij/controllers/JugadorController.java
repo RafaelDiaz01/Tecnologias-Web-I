@@ -21,7 +21,7 @@ import com.unsij.services.JugadorService;
  *
  * @author rafaeldiaz
  */
-@WebServlet(name = "JugadorController", urlPatterns = {"/JugadorController"})
+@WebServlet(name = "JugadorController", urlPatterns = {"/jugadores"})
 public class JugadorController extends HttpServlet {
 
     private final JugadorService service = new JugadorService();
