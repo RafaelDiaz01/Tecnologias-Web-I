@@ -92,34 +92,91 @@
                 </div>
             </div>
 
-
             <div class="parent">
-                <div class="div1 card">
-                    <div class="stat-value">24</div>
-                    <div class="stat-name">Goles</div>                   
+                <div class="div1">
+                    <div class="fifa-card">
+                        <!-- Sección superior con foto y datos básicos -->
+                        <div class="player-header">
+                            <div class="player-image">
+                                <img src="${pageContext.request.contextPath}/public/assets/usuario.png" alt="alt"/>
+                                <div class="player-rating">92</div>
+                            </div>
+                            <div class="player-info">
+                                <div class="player-name">LIONEL MESSI</div>
+                                <div class="player-details">
+                                    <span class="player-number">10</span>
+                                    <span class="player-team">INTER MIAMI</span>
+                                    <span class="player-nationality">ARGENTINA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer con logo y diseño -->
+                        <div class="card-footer">
+                            <div class="team-logo">
+                                <img src="https://via.placeholder.com/40x40" alt="Team Logo">
+                            </div>
+                            <div class="fifa-badge">FIFA 23</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="div2 card">
-                    <div class="stat-value">78</div>
-                    <div class="stat-name">Disparos</div>
+
+                <div class="div2">
+                    <div class="fifa-card">
+                        <!-- Sección superior con foto y datos básicos -->
+                        <div class="player-header">
+                            <div class="player-image">
+                                <img src="${pageContext.request.contextPath}/public/assets/usuario.png" alt="alt"/>
+                                <div class="player-rating">92</div>
+                            </div>
+                            <div class="player-info">
+                                <div class="player-name">LIONEL MESSI</div>
+                                <div class="player-details">
+                                    <span class="player-number">10</span>
+                                    <span class="player-team">INTER MIAMI</span>
+                                    <span class="player-nationality">ARGENTINA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer con logo y diseño -->
+                        <div class="card-footer">
+                            <div class="team-logo">
+                                <img src="https://via.placeholder.com/40x40" alt="Team Logo">
+                            </div>
+                            <div class="fifa-badge">FIFA 23</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="div3 card">
-                    <div class="stat-value">542</div>
-                    <div class="stat-name">Pases</div>
-                </div>
-                <div class="div4 card">
-                    <div class="stat-value">63</div>
-                    <div class="stat-name">Regates</div>
-                </div>
-                <div class="div5 card">
-                    <div class="stat-value">28</div>
-                    <div class="stat-name">Atajadas</div>
-                </div>
-                <div class="div6 card">
-                    <div class="stat-value">12</div>
-                    <div class="stat-name">Asistencias</div>
+
+                <div class="div3"> 
+                    <div class="fifa-card">
+                        <!-- Sección superior con foto y datos básicos -->
+                        <div class="player-header">
+                            <div class="player-image">
+                                <img src="${pageContext.request.contextPath}/public/assets/usuario.png" alt="alt"/>
+                                <div class="player-rating">92</div>
+                            </div>
+                            <div class="player-info">
+                                <div class="player-name">LIONEL MESSI</div>
+                                <div class="player-details">
+                                    <span class="player-number">10</span>
+                                    <span class="player-team">INTER MIAMI</span>
+                                    <span class="player-nationality">ARGENTINA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer con logo y diseño -->
+                        <div class="card-footer">
+                            <div class="team-logo">
+                                <img src="https://via.placeholder.com/40x40" alt="Team Logo">
+                            </div>
+                            <div class="fifa-badge">FIFA 23</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </main>
 
         <jsp:include page="../componentes/footer.jsp"/> <!-- Footer -->
