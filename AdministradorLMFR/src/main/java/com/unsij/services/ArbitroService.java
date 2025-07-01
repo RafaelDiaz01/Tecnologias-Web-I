@@ -14,4 +14,20 @@ public class ArbitroService {
     public List<Arbitro> obtenerArbitros() {
         return dao.listar();
     }
+    
+    public void guardar(Arbitro arbitro) {
+        if (arbitro.getIdArbitro() > 0) {
+            dao.actualizar(arbitro);
+        } else {
+            dao.insertar(arbitro);
+        }
+    }
+    
+    public Arbitro obtenerPorId(long id) {
+        return dao.buscarPorId(id);
+    }
+    
+    public void eliminar(long id) {
+        dao.eliminar(id);
+    }
 }

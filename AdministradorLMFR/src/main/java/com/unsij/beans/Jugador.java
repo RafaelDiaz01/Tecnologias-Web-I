@@ -12,6 +12,7 @@ public class Jugador implements Serializable {
     private String nombreJugador;
     private int edad;
     private int numeroDorsal;
+    private String sexo;
     private String tarjetasAmarillas;
     private String tarjetasRojas;
     private boolean statusJugador;
@@ -59,6 +60,14 @@ public class Jugador implements Serializable {
     public void setNumeroDorsal(int numeroDorsal) {
         this.numeroDorsal = numeroDorsal;
     }
+    
+    public String getSexo() {
+        return sexo;
+    }
+    
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
 
     public String getTarjetasAmarillas() {
         return tarjetasAmarillas;
@@ -98,6 +107,14 @@ public class Jugador implements Serializable {
 
     public void setIdTipoUsuario(long idTipoUsuario) {
         this.idTipoUsuario = idTipoUsuario;
+    }
+    
+    public Equipo getEquipo() {
+        return equipo;
+    }
+    
+    public void setEquipo(Equipo equipo){
+        this.equipo = equipo;
     }
 
     @Override

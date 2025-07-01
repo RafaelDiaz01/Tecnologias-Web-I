@@ -106,3 +106,8 @@ header {
     color: white;
     border-radius: 20px;
 }
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}

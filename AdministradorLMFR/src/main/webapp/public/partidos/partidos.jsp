@@ -17,15 +17,24 @@
               integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
         <link href="../componentes/navbar.css" rel="stylesheet" />
         <link href="../componentes/footer.css" rel="stylesheet" />
-        <link rel="stylesheet" href="partidos.css"/>
+        <link href="${pageContext.request.contextPath}/public/componentes/estilos_generales.css" rel="stylesheet" />
     </head>
     <body>
         <jsp:include page="../componentes/navbar.jsp"/>
 
         <main>
-            <h1>Programación del Día</h1>
-            <div class="tabla-container">
-                <table>
+            <div class="container">
+                <div class="sport-pattern-header">
+                    <div class="titleAdd">
+                        <button class="inline-add-btn" id="toggleFormBtn">+</button>
+                        <div class="title-container">             
+                            <h1>Programación</h1>
+                            <p class="subtitle">del Día</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <table class="players-table">
                     <thead>
                         <tr>
                             <th>Hora</th>
@@ -73,6 +82,7 @@
                         </tr>
                     </tbody>
                 </table>
+
             </div>
         </main>
 

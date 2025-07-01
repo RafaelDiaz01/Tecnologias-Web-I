@@ -135,13 +135,13 @@ h2 {
 
 /* Diseño principal de la carta FIFA */
 .fifa-card {
-    background: linear-gradient(145deg, #0a1a2f 0%, #1a3a6a 100%);
+    background: linear-gradient(145deg, rgb(52, 78, 65) 0%, rgb(88, 129, 87) 100%);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
     position: relative;
     color: white;
-    border: 2px solid rgba(255, 215, 0, 0.3);
+    border: 2px solid rgba(251, 176, 45, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -157,10 +157,10 @@ h2 {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, 
-        rgba(255,215,0,0) 0%, 
-        rgba(255,215,0,0.8) 50%, 
-        rgba(255,215,0,0) 100%);
+    background: linear-gradient(90deg,
+        rgba(251, 176, 45,0) 0%,
+        rgba(251, 176, 45,0.8) 50%,
+        rgba(251, 176, 45,0) 100%);
 }
 
 /* Encabezado con foto del jugador */
@@ -211,7 +211,6 @@ h2 {
 .player-name {
     font-size: 1.5rem;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);

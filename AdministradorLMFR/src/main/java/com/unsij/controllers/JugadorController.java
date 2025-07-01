@@ -16,6 +16,8 @@ import java.util.List;
 
 import com.unsij.beans.Jugador;
 import com.unsij.services.JugadorService;
+import com.unsij.beans.Equipo;
+import com.unsij.services.EquipoService;
 
 /**
  *
@@ -29,24 +31,58 @@ public class JugadorController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.setAttribute("jugadores", service.obtenerJugadores());
-        request.getRequestDispatcher("/public/jugadores/jugadores.jsp").forward(request, response);
+        String action = request.getParameter("action");
 
+        List<Equipo> equipos = new EquipoService().obtenerEquipos();
+        request.setAttribute("equipos", equipos);
+
+        if ("edit".equals(action)) {
+            int id = Integer.parseInt(request.getParameter("id"));
+            Jugador jugador = service.obtenerPorId(id);
+            request.setAttribute("jugador", jugador);
+            request.setAttribute("jugadores", service.obtenerJugadores());
+            request.getRequestDispatcher("/public/jugadores/jugadores.jsp").forward(request, response);
+        } else if ("delete".equals(action)) {
+            long id = Long.parseLong(request.getParameter("id"));
+            service.eliminar(id);
+            response.sendRedirect(request.getContextPath() + "/jugadores");
+        } else {
+            request.setAttribute("jugadores", service.obtenerJugadores());
+            request.getRequestDispatcher("/public/jugadores/jugadores.jsp").forward(request, response);
+        }
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = request.getParameter("id") == null || request.getParameter("id").isEmpty() ? 0 : Integer.parseInt(request.getParameter("id"));
-        String nombre = request.getParameter("nombre");
-        int edad = Integer.parseInt(request.getParameter("edad"));
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
+        response.setCharacterEncoding("UTF-8");
+        try {
+            int id = request.getParameter("id") == null || request.getParameter("id").isEmpty() ? 0
+                    : Integer.parseInt(request.getParameter("id"));
+            String nombre = request.getParameter("nombre");
+            int edad = Integer.parseInt(request.getParameter("edad"));
+            int numeroDorsal = Integer.parseInt(request.getParameter("numeroDorsal"));
+            String sexo = request.getParameter("sexo");
 
-        Jugador u = new Jugador();
-        u.setIdJugador(id);
-        u.setNombreJugador(nombre);
-        u.setEdad(edad);
+            Jugador jugador = new Jugador();
+            jugador.setIdJugador(id);
+            jugador.setNombreJugador(nombre);
+            jugador.setEdad(edad);
+            jugador.setNumeroDorsal(numeroDorsal);
+            jugador.setSexo(sexo);
 
-        service.guardar(u);
-        response.sendRedirect("usuarios");
+            // Asignar el equipo
+            Equipo equipo = new Equipo();
+            equipo.setIdEquipo(Integer.parseInt(request.getParameter("idEquipo")));
+            jugador.setEquipo(equipo);
+
+            service.guardar(jugador);
+            response.sendRedirect(request.getContextPath() + "/jugadores"); // Redirige a la lista de jugadores
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.sendRedirect(request.getContextPath() + "/error.jsp"); // Manejo de errores
+        }
     }
-
 }

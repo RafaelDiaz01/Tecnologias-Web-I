@@ -8,23 +8,23 @@
 <header>
     <div class="header-left">
         <div class="logo-left">
-            <a href="${pageContext.request.contextPath}/public/inicio/inicio.jsp"> <img src="${pageContext.request.contextPath}/public/assets/logoIxtlan.png" alt="Logo Ixtlán"> </a>
+            <a href="http://localhost:8181/AdministradorLMFR/inicio"> <img src="${pageContext.request.contextPath}/public/assets/logoIxtlan.png" alt="Logo Ixtlán"> </a>
         </div>
         <div class="title">
-            <h1>Sistema de Gestión Fast League</h1>
+            <h1> <a href="http://localhost:8181/AdministradorLMFR/inicio">Sistema de Gestión Fast League</a></h1>
         </div>
     </div>
     <nav class="menu-buttons">
         <button onclick="location.href = '${pageContext.request.contextPath}/public/partidos/partidos.jsp'">Partidos</button>
-        <button onclick="location.href = '${pageContext.request.contextPath}/public/partidos/partidos_vistaUsuario.jsp'">Jugadores</button>
-        <button onclick="location.href = './usuarios'">Tabla de Puntos</button>
+        <button onclick="location.href = 'http://localhost:8181/AdministradorLMFR/jugadores'">Jugadores</button>
+        <button onclick="location.href = '${pageContext.request.contextPath}/public/partidos/partidos_vistaUsuario.jsp'">Tabla de Puntos</button>
         <div class="dropdown">
             <button class="dropdown-btn">Otros</button>
             <div class="dropdown-content">
-                <a href="../partidos/plantilla.jsp">Equipos</a>
+                <a href="http://localhost:8181/AdministradorLMFR/equipos">Equipos</a>
                 <a href="http://localhost:8181/AdministradorLMFR/jugadores">Tabla de Goleo</a>
                 <a href="#">Temporadas</a>
-                <a href="#">Categorias</a>
+                <a href="${pageContext.request.contextPath}/public/categorias/categorias.jsp">Categorias</a>
                 <a href="http://localhost:8181/AdministradorLMFR/arbitros">Arbitros</a>
                 <a href="#">Ajustes</a>
                 <a id="cerrar_sesion">Cerrar Sesión</a>

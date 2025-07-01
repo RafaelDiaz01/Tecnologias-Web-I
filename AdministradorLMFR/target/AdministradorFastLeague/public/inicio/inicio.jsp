@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
@@ -16,9 +17,9 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-        <link href="inicio.css" rel="stylesheet">
-        <link href="../componentes/navbar.css" rel="stylesheet" />
-        <link href="../componentes/footer.css" rel="stylesheet" />
+        <link href="${pageContext.request.contextPath}/public/inicio/inicio.css" rel="stylesheet" />
+        <link href="${pageContext.request.contextPath}/public/componentes/navbar.css" rel="stylesheet">
+        <link href="${pageContext.request.contextPath}/public/componentes/footer.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -102,12 +103,14 @@
                                 <div class="player-rating">92</div>
                             </div>
                             <div class="player-info">
-                                <div class="player-name">LIONEL MESSI</div>
-                                <div class="player-details">
-                                    <span class="player-number">10</span>
-                                    <span class="player-team">INTER MIAMI</span>
-                                    <span class="player-nationality">ARGENTINA</span>
-                                </div>
+                                <c:if test="${not empty jugadores}">
+                                    <div class="player-name">${jugadores[0].nombreJugador}</div>
+                                    <div class="player-details">
+                                        <span class="player-number">${jugadores[0].numeroDorsal}</span>
+                                        <span class="player-team">${jugadores[0].sexo}</span>
+                                        <span class="player-nationality">${jugadores[0].edad} años</span>
+                                    </div>
+                                </c:if>
                             </div>
                         </div>
 
@@ -116,7 +119,7 @@
                             <div class="team-logo">
                                 <img src="https://via.placeholder.com/40x40" alt="Team Logo">
                             </div>
-                            <div class="fifa-badge">FIFA 23</div>
+                            <div class="fifa-badge">Ixtlán de Juárez</div>
                         </div>
                     </div>
                 </div>
@@ -127,15 +130,17 @@
                         <div class="player-header">
                             <div class="player-image">
                                 <img src="${pageContext.request.contextPath}/public/assets/usuario.png" alt="alt"/>
-                                <div class="player-rating">92</div>
+                                <div class="player-rating">84</div>
                             </div>
                             <div class="player-info">
-                                <div class="player-name">LIONEL MESSI</div>
-                                <div class="player-details">
-                                    <span class="player-number">10</span>
-                                    <span class="player-team">INTER MIAMI</span>
-                                    <span class="player-nationality">ARGENTINA</span>
-                                </div>
+                                <c:if test="${not empty jugadores}">
+                                    <div class="player-name">${jugadores[1].nombreJugador}</div>
+                                    <div class="player-details">
+                                        <span class="player-number">${jugadores[1].numeroDorsal}</span>
+                                        <span class="player-team">${jugadores[1].sexo}</span>
+                                        <span class="player-nationality">${jugadores[1].edad} años</span>
+                                    </div>
+                                </c:if>
                             </div>
                         </div>
 
@@ -144,7 +149,7 @@
                             <div class="team-logo">
                                 <img src="https://via.placeholder.com/40x40" alt="Team Logo">
                             </div>
-                            <div class="fifa-badge">FIFA 23</div>
+                            <div class="fifa-badge">Ixtlán de Juárez</div>
                         </div>
                     </div>
                 </div>
@@ -155,15 +160,17 @@
                         <div class="player-header">
                             <div class="player-image">
                                 <img src="${pageContext.request.contextPath}/public/assets/usuario.png" alt="alt"/>
-                                <div class="player-rating">92</div>
+                                <div class="player-rating">78</div>
                             </div>
                             <div class="player-info">
-                                <div class="player-name">LIONEL MESSI</div>
-                                <div class="player-details">
-                                    <span class="player-number">10</span>
-                                    <span class="player-team">INTER MIAMI</span>
-                                    <span class="player-nationality">ARGENTINA</span>
-                                </div>
+                                <c:if test="${not empty jugadores}">
+                                    <div class="player-name">${jugadores[2].nombreJugador}</div>
+                                    <div class="player-details">
+                                        <span class="player-number">${jugadores[2].numeroDorsal}</span>
+                                        <span class="player-team">${jugadores[2].sexo}</span>
+                                        <span class="player-nationality">${jugadores[0].edad} años</span>
+                                    </div>
+                                </c:if>
                             </div>
                         </div>
 
@@ -172,7 +179,7 @@
                             <div class="team-logo">
                                 <img src="https://via.placeholder.com/40x40" alt="Team Logo">
                             </div>
-                            <div class="fifa-badge">FIFA 23</div>
+                            <div class="fifa-badge">Ixtlán de Juárez</div>
                         </div>
                     </div>
                 </div>

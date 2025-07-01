@@ -15,19 +15,19 @@ public class JugadorService {
         return dao.listar();
     }
     
-    public Jugador obtenerPorId(int id) {
-        return dao.buscarPorId(id);
-    }
-
-    public void guardar(Jugador u) {
-        if (u.getIdJugador() > 0) {
-            dao.actualizar(u);
+    public void guardar(Jugador jugador) {
+        if (jugador.getIdJugador() > 0) {
+            dao.actualizar(jugador);
         } else {
-            dao.insertar(u);
+            dao.insertar(jugador);
         }
     }
-
-    public void eliminar(int id) {
+    
+    public Jugador obtenerPorId(long id) {
+        return dao.buscarPorId(id);
+    }
+    
+    public void eliminar(long id) {
         dao.eliminar(id);
     }
 
